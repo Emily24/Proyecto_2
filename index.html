@@ -1,14 +1,18 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 
-<head> <!-- Contiene metadatos de configuracion de la pagina 9 -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <!-- Contiene metadatos de configuracion de la pagina 9 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emily Melgarejo</title>
 </head>
 
 <body>
-
+    <nav>
+        <a href="./contacto.html">Ir a la página de contacto</a>
+    </nav>
+    
     <ul>
         <li>Perro</li>
         <li>Gato</li>
@@ -16,8 +20,8 @@
         <li>Tigre</li>
         <li>Vaca</li>
     </ul>
-<!-- dll sirve para mostrat estructuras del tipo -->
-    <dl> 
+    <!-- dl sirve para mostrat estructuras del tipo -->
+    <dl>
         <!-- dt sirve para el concepto -->
         <dt>Perro</dt>
         <!-- dd es para la definicion -->
@@ -26,13 +30,16 @@
 
     <section>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sequi quibusdam ducimus velit repudiandae iure pariatur enim repellendus earum voluptatibus, atque fuga minima vitae quidem tempore ipsum minus corrupti quos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            sequi quibusdam ducimus velit repudiandae iure pariatur enim repellendus
+            earum voluptatibus, atque fuga minima vitae quidem tempore ipsum minus
+            corrupti quos.
         </p>
     </section>
 
     <section>
         <article>
-            <p>Plan Premium</p>   
+            <p>Plan Premium</p>
         </article>
     </section>
 
@@ -54,57 +61,107 @@
         <a href="+57333333"></a>
     </footer>
 
-    <img src="./img/golden-202-min.png" alt="Perro Golden bebé" height="200px">
+    <img src="./img/golden-202-min.png" alt="Perro Golden bebé" height="200px" />
 
-    <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/vd-KBJc4l5o?si=IKsqPq0B-jN2GTKp" 
-        title="Videotutorial HTML" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        loading = "lazy"
-        allowfullscreen>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vd-KBJc4l5o?si=IKsqPq0B-jN2GTKp"
+        title="Videotutorial HTML" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen>
     </iframe>
 
-    <object 
-        data="./PDF/Partitura.pdf" 
-        type="application/pdf" 
-        width="500" 
-        height="500">
-    </object>
+    <!-- Incrustar archivos como PDF -->
+    <object data="./PDF/Partitura.pdf" type="application/pdf" width="500" height="500"></object>
 
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63631.63398914784!2d-74.15226115136713!3d4.598120600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7eccfe58f%3A0x99cb72b35351476!2sPlaza%20de%20Bol%C3%ADvar!5e0!3m2!1ses-419!2sco!4v1713829746146!5m2!1ses-419!2sco" 
-        width="400" 
-        height="300" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63631.63398914784!2d-74.15226115136713!3d4.598120600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7eccfe58f%3A0x99cb72b35351476!2sPlaza%20de%20Bol%C3%ADvar!5e0!3m2!1ses-419!2sco!4v1713829746146!5m2!1ses-419!2sco"
+        width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 
-    <video 
-        src="./video/flower.webm"
-        controls
-        autoplay
-        muted
-        loop
-        height="300">
-    </video>
+    <video src="./video/flower.webm" controls autoplay muted loop height="300"></video>
 
-    <audio 
-        src="./audio/t-rex-roar.mp3"
-        controls
-        autoplay
-        controlslist="nodownload">
-    </audio>
+    <audio src="./audio/t-rex-roar.mp3" controls autoplay controlslist="nodownload"></audio>
 
     <a href="./audio/t-rex-roar.mp3" download="">Descargar audio</a>
 
+    <figure>
+        <img src="./img/golden-202-min.png" 
+            alt="Perro Golden bebé"
+            width="300">
+        <figcaption>Cachorro</figcaption>
+    </figure>
 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox ="0 0 576 512" fill=""red>
+        <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-321.7 160.2c0 2.1-.2 5.4-.5"></path>
+    </svg>
 
+    <br><br><br><br><br><br><br><br>
+    
+    <h1>Formulario</h1>
+
+    <form action="" method="get" class="form-ejemplo">
+        <label for="">
+            Nombre de usuario:
+            <input type="text" placeholder="Ejemplo: Emily" required>
+        </label>
+        
+        <input type="number" name="edad" placeholder="Ejemplo: 12345" id="">
+        <input type="email" name="email" placeholder="Correo electrónico" id="">
+        <input type="date" name="date" id="">
+        <input type="password" name="password" placeholder="Contraseña" id="">
+        <input type="checkbox" name="" id="">
+        <select name="ciudad" id="">
+            <option value="bogota">Bogotá</option>
+            <option value="medellin">Medellín</option>
+            <option value="cali">Cali</option>
+        </select>
+        <input type="submit" value="Enviar">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+<br><br><br><br><br><br><br><br>
+
+<h1>Tabla</h1>
+
+<table border="2">
+    <!--etiqueta caption se utiliza para el titulo -->
+    <caption>Usuario de mi página</caption>
+    <!-- Etiqueta thead indica la cabecera de la tabla -->
+    <thead>
+        <!-- Etiqueta tr indica una fila  -->
+        <tr>
+            <!-- Etiqueta th indica los titulos columnas dentro de una fila -->
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>email</th>
+        </tr>
+    </thead>
+    <!-- Etiqueta tbody contenido de la tabla -->
+    <tbody>
+        <tr>
+            <td>Emily</td>
+            <td>24</td>
+            <td>emily@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Carol</td>
+            <td>16</td>
+            <td>carol@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Robert</td>
+            <td>31</td>
+            <td>robert@gmail.com</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total de usuario: 3</td>
+            <td>Total de usuario: 3</td>
+            <td>Total de usuario: 3</td>
+        </tr>
+    </tfoot>
+    
+</table>
 
 </body>
 
